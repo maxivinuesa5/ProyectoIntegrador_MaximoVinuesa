@@ -1,0 +1,13 @@
+.row {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,52,110,0.9220063025210083) 51%, rgba(0,0,0,1) 100%);
+background-size: 1.5px;
+}
+
+footer{
+    color: #fefefe;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px #7562B3;
+}
