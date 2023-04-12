@@ -1,4 +1,3 @@
-<div data-padding-top></div>
 <section class="vh-100 gradient-custom">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -11,7 +10,7 @@
               <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
               <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
 
-              <form #userform="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 
                 <div class="form-outline form-white mb-4">
                   <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"

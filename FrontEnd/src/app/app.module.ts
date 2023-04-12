@@ -15,7 +15,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component'
+import { LoginComponent } from './components/login/login.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,13 +32,26 @@ import { LoginComponent } from './components/login/login.component'
     FooterComponent,
     HomeComponent,
     LoginComponent
+
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({}),
-    HttpClientModule
-  ],
+    FormsModule,
+    //BrowserAnimationsModule ver comentario
+    NgCircleProgressModule.forRoot({
+    
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300
+       })
+      ],
+      
   providers: [],
   bootstrap: [AppComponent]
 })
